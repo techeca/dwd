@@ -114,7 +114,7 @@ return `${mN}`
 
           if(x < 10){temphour = `0${x}`}else{temphour = x}
           setChecked(true)
-          messagesBox('succes', `You have a date with death!!, Date: ${date.month}-${date.day}-${date.year} ${temphour}:00`)
+          messagesBox('success', `You have a date with death!!, Date: ${date.month}-${date.day}-${date.year} ${temphour}:00`)
           //setOpen(true)
         }
         //console.log('hora tomada')
@@ -171,7 +171,7 @@ return `${mN}`
              <Stack sx={{m:1}} spacing={2}>
 
               {arrHours.filter((hour) => hour !== datesOut.find((hourT) => hourT === hour)).length > 0 ? arrHours.filter((hour) => hour !== datesOut.find((hourT) => hourT === hour)).map((hour) =>
-                <Paper variant='outlined' key={hour} elevation={1} sx={{p:1, display:'flex', flexDirection:'row', justifyContent:'space-between', }}>
+                <Paper variant='outlined' key={hour} sx={{p:1, display:'flex', flexDirection:'row', justifyContent:'space-between', }}>
                   <Typography variant='body1' sx={{m:1}}>From: {parseStringHour(hour)}</Typography><Typography variant='body1' sx={{m:1}}>To: {parseStringHour(hour+1)}</Typography>
 
                   <Button variant='outlined' onClick={() => takeHour(hour)}>Take</Button>
