@@ -116,6 +116,7 @@ return `${mN}`
           setChecked(true)
           messagesBox('success', `You have a date with death!!, Date: ${date.month}-${date.day}-${date.year} ${temphour}:00`)
           //setOpen(true)
+          setEmail('')
         }
         //console.log('hora tomada')
 
