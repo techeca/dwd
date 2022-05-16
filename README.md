@@ -4,7 +4,7 @@
 NextJS
 
 
-Local
+Local\
 Change next.config.js
 ```bash
 ? 'https://dwd-techeca.vercel.app/api' //  http://localhost:3000/api
